@@ -1,2 +1,126 @@
+/***********************************************/
+/***************GLOBAL RESETTING****************/
+/***********************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta San", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* 
+
+### Primary
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+*/
+
+/***********************************************/
+/*************NOTIFICATION SECTION**************/
+/***********************************************/
+
+body {
+  max-width: 144rem;
+  background-color: hsl(210, 60%, 98%);
+}
+
 main {
+  display: grid;
+  padding: 2rem;
+  margin: auto;
+  max-width: 80rem;
+  color: hsl(219, 12%, 42%);
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 3px 30px hsl(211, 68%, 94%);
+
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.notifications-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.notifications-info div {
+  padding: 1rem;
+  /* gap: space-around; */
+}
+
+.notifications-info div span {
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.1rem 0.9rem;
+  border-radius: 5px;
+  color: white;
+  background-color: hsl(219, 85%, 26%);
+}
+
+.mark-all-read {
+  text-align: end;
+  color: hsl(219, 14%, 63%);
+}
+
+li {
+  list-style: none;
+  padding: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.notification-message {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  padding: 2rem 4rem 1.5rem 2rem;
+
+  justify-content: center;
+  align-items: center;
+
+  /* not real message */
+  background-color: hsl(210, 60%, 98%);
+}
+
+.user-img {
+  width: 8rem;
+  padding-right: 2rem;
+}
+
+.user-name {
+  color: black;
+  font-weight: 800;
+}
+
+.game {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
 }
