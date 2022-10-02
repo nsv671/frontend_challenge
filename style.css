@@ -37,6 +37,18 @@ body {
 */
 
 /***********************************************/
+/******************REUSABLE CODE****************/
+/***********************************************/
+
+.unread-message-icon {
+  display: inline-block;
+  color: #f65351;
+  justify-content: center;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+/***********************************************/
 /*************NOTIFICATION SECTION**************/
 /***********************************************/
 
@@ -103,7 +115,7 @@ li {
   font-size: 1.6rem;
   padding: 2rem 4rem 1.5rem 2rem;
 
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 
   /* not real message */
@@ -122,5 +134,10 @@ li {
 
 .game {
   color: hsl(219, 12%, 42%);
+  font-weight: 800;
+}
+
+.club {
+  color: hsl(219, 85%, 26%);
   font-weight: 800;
 }
