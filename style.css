@@ -44,8 +44,13 @@ body {
   display: inline-block;
   color: #f65351;
   justify-content: center;
+  align-items: center;
   height: 1.2rem;
   width: 1.2rem;
+}
+
+.notification-message-unread {
+  background-color: hsl(210, 60%, 98%);
 }
 
 /***********************************************/
@@ -55,12 +60,14 @@ body {
 body {
   max-width: 144rem;
   background-color: hsl(210, 60%, 98%);
+  margin: auto;
 }
 
 main {
   display: grid;
   padding: 2rem;
-  margin: auto;
+  width: inherit;
+  margin: 4rem auto;
   max-width: 80rem;
   color: hsl(219, 12%, 42%);
   background-color: hsl(0, 0%, 100%);
@@ -68,20 +75,24 @@ main {
 
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
+}
+
+.content {
+  margin: auto;
+}
+
+.header-notification {
+  margin-bottom: 2rem;
 }
 
 .notifications-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 800;
-}
-
-.notifications-info div {
-  padding: 1rem;
-  /* gap: space-around; */
+  color: hsl(224, 21%, 14%);
 }
 
 .notifications-info div span {
@@ -93,16 +104,24 @@ main {
   background-color: hsl(219, 85%, 26%);
 }
 
+.notification {
+  font-size: 2rem;
+}
+
+.notification-message {
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
 .mark-all-read {
   text-align: end;
   color: hsl(219, 14%, 63%);
-}
-
-li {
-  list-style: none;
-  padding: 0.2rem;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-family: inherit;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  align-items: center;
 }
 
 .unread {
@@ -113,23 +132,50 @@ li {
   display: flex;
   padding: 0.5rem;
   font-size: 1.6rem;
-  padding: 2rem 4rem 1.5rem 2rem;
+  padding: 2rem 3rem 1.5rem 2rem;
 
   /* justify-content: center; */
   align-items: center;
 
   /* not real message */
-  background-color: hsl(210, 60%, 98%);
+}
+
+.message-paragraph {
+  margin-bottom: 0.5rem;
+}
+
+/* .your-picture {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.your-picture p {
+  margin-right: auto;
+}
+
+.chess-img {
+  margin-left: auto;
+  text-align: end;
+  height: 6.4rem;
+}
+
+span {
+  margin: 0;
 }
 
 .user-img {
   width: 8rem;
-  padding-right: 2rem;
+  padding-right: 1.6rem;
 }
 
 .user-name {
-  color: black;
+  color: #383d47;
   font-weight: 800;
+}
+
+.time {
+  margin-bottom: 1rem;
 }
 
 .game {
@@ -137,7 +183,44 @@ li {
   font-weight: 800;
 }
 
+.game-5-end {
+  color: hsl(219, 14%, 63%);
+  font-weight: 800;
+}
+
 .club {
   color: hsl(219, 85%, 26%);
   font-weight: 800;
+}
+
+.private-message {
+  padding: 1.6rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.8px;
+  border: 1px solid hsl(205, 33%, 90%);
+}
+
+.attribution {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 29em) {
+  .notification {
+    font-size: 1.6rem;
+  }
+
+  .notification-message {
+    font-size: 1.1rem;
+  }
+
+  .private-message {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+  }
+
+  .attribution {
+    font-size: 0.69rem;
+  }
 }
