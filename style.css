@@ -48,7 +48,7 @@ body {
 }
 
 .notification-message-unread {
-  background-color: hsl(210, 60%, 98%);
+  background-color: #f7fafd;
 }
 
 a {
@@ -61,7 +61,7 @@ a {
 
 body {
   max-width: 144rem;
-  background-color: hsl(210, 60%, 98%);
+  background-color: #f7fafd;
   margin: auto;
 }
 
@@ -71,9 +71,9 @@ main {
   width: inherit;
   margin: 4rem auto;
   max-width: 80rem;
-  color: hsl(219, 12%, 42%);
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 3px 30px hsl(211, 68%, 94%);
+  color: #5e6778;
+  background-color: #ffffff;
+  box-shadow: 0 3px 30px #e5effa;
   border-radius: 1.6rem;
 
   justify-content: center;
@@ -95,7 +95,7 @@ main {
 
   font-size: 1.6rem;
   font-weight: 800;
-  color: hsl(224, 21%, 14%);
+  color: #1c202b;
 }
 
 .notifications-info div span {
@@ -103,8 +103,8 @@ main {
   margin: 0.2rem;
   padding: 0.1rem 0.9rem;
   border-radius: 5px;
-  color: white;
-  background-color: hsl(219, 85%, 26%);
+  color: #ffffff;
+  background-color: #0a317b;
 }
 
 .notification {
@@ -118,7 +118,7 @@ main {
 
 .mark-all-read {
   text-align: end;
-  color: hsl(219, 14%, 63%);
+  color: #939dae;
   font-size: 1.6rem;
   font-family: inherit;
   background-color: #fff;
@@ -178,43 +178,43 @@ main {
 }
 
 .game {
-  color: hsl(219, 12%, 42%);
+  color: #5e6778;
   font-weight: 800;
 }
 
 .game-5-end {
-  color: hsl(219, 14%, 63%);
+  color: #939dae;
   font-weight: 800;
 }
 
 .club {
-  color: hsl(219, 14%, 63%);
+  color: #939dae;
   font-weight: 800;
 }
 
 a:hover,
 a:active {
-  color: hsl(219, 85%, 26%);
+  color: #0a317b;
 }
 
 .private-message {
-  color: hsl(219, 12%, 42%);
+  color: #5e6778;
   padding: 1.6rem;
   margin-right: 2rem;
   border-radius: 0.5rem;
   letter-spacing: 0.8px;
-  border: 1px solid hsl(205, 33%, 90%);
+  border: 1px solid #dde7ee;
   /* cursor: pointer; */
 }
 
 a:link .private-message,
 a:visited .private-message {
-  color: hsl(219, 12%, 42%);
+  color: #5e6778;
 }
 
 a:hover .private-message,
 a:active .private-message {
-  background-color: hsl(210, 60%, 98%);
+  background-color: #f7fafd;
 }
 
 .attribution {
