@@ -198,7 +198,7 @@ a:active {
 }
 
 .private-message {
-  color: hsl(219, 12%, 42%) !important;
+  color: hsl(219, 12%, 42%);
   padding: 1.6rem;
   margin-right: 2rem;
   border-radius: 0.5rem;
