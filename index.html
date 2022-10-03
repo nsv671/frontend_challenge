@@ -37,73 +37,78 @@
   <body>
     <main class="section-notification">
       <header class="header-notification">
-          <div class="notifications-info">
-            <div class="notification">Notifications <span class="notification-count">3</span></div>
-            <button class="mark-all-read" >Mark all as read</button>
+        <div class="notifications-info">
+          <div class="notification">
+            Notifications <span class="notification-count">3</span>
           </div>
+          <button class="mark-all-read">Mark all as read</button>
+        </div>
       </header>
-        <div class="notification">
-          <div class="notification-message notification-message-unread">
-            <img
-              class="user-img"
-              src="./assets/images/avatar-mark-webber.webp"
-              alt=""
-            />
-            <div class="message">
-              <p class="message-paragraph">
-                <span class="user-name">Mark Webber</span> <span> reacted to your recent
-                  post</span>
-                <span class="game">My first tournament today!</span>
-                <ion-icon
-                  class="unread-message-icon"
-                  name="ellipse-sharp"
-                ></ion-icon>
-              </p>
-              <div class="time">1m ago</div>
-            </div>
-          </div>  
-        </div>
-        <div class="notification">
-            <div class="notification-message notification-message-unread">
-              <img
-                class="user-img"
-                src="./assets/images/avatar-angela-gray.webp"
-                alt=""
-              />
-              <div class="message">
-                <p class="message-paragraph">
-                  <span class="user-name">Mark Webber </span>followed you
-                  <ion-icon
-                    class="unread-message-icon"
-                    name="ellipse-sharp"
-                  ></ion-icon>
-                </p>
-                <div class="time">5m ago</div>
-              </div>
-            </div>  
-        </div>
-        
-        <div class="notification">  
-          <div class="notification-message notification-message-unread">
-            <img
-              class="user-img"
-              src="./assets/images/avatar-jacob-thompson.webp"
-              alt=""
-            />
-            <div class="message">
-              <p class="message-paragraph">
-                <span class="user-name">Jacob Thompson</span> has joined your group
-                <span class="club">Chess Club</span>
-                <ion-icon
-                  class="unread-message-icon"
-                  name="ellipse-sharp"
-                ></ion-icon>
-              </p>
-              <div class="time">1m ago</div>
-            </div>
+      <div class="notification-box">
+        <div class="notification-message notification-message-unread">
+          <img
+            class="user-img"
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="Mark webber's image"
+          />
+          <div class="message">
+            <p class="message-paragraph">
+              <a href="#" class="user-name">Mark Webber</a> reacted to your
+              recent post
+              <a href="#" class="game">My first tournament today!</a>
+              <ion-icon
+                class="unread-message-icon"
+                name="ellipse-sharp"
+              ></ion-icon>
+            </p>
+            <div class="time">1m ago</div>
           </div>
-        </div>    
+        </div>
+      </div>
 
+      <div class="notification-box">
+        <div class="notification-message notification-message-unread">
+          <img
+            class="user-img"
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="Angela Gray's image"
+          />
+          <div class="message">
+            <p class="message-paragraph">
+              <a href="#" class="user-name">Mark Webber </a>followed you
+              <ion-icon
+                class="unread-message-icon"
+                name="ellipse-sharp"
+              ></ion-icon>
+            </p>
+            <div class="time">5m ago</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notification-box">
+        <div class="notification-message notification-message-unread">
+          <img
+            class="user-img"
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt=""
+          />
+          <div class="message">
+            <p class="message-paragraph">
+              <a href="#" class="user-name">Jacob Thompson</a> has joined your
+              group
+              <a href="#" class="club">Chess Club</a>
+              <ion-icon
+                class="unread-message-icon"
+                name="ellipse-sharp"
+              ></ion-icon>
+            </p>
+            <div class="time">1m ago</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notification-box">
         <div class="notification-message">
           <img
             class="user-img"
@@ -112,17 +117,24 @@
           />
           <div class="message">
             <p class="message-paragraph">
-              <span class="user-name">Rizky Hasanuddin</span> sent you a private message
+              <a href="#" class="user-name">Rizky Hasanuddin</a> sent you a
+              private message
             </p>
             <div class="time">5 days ago</div>
             <div class="private-message">
-              <p>Hello, thanks for setting up the Chess Club. I've been a member for a
-                few weeks now and I'm already having lots of fun and improving my
-                game.</p>
+              <p>
+                <a href="#"
+                  >Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.</a
+                >
+              </p>
             </div>
           </div>
-        </div>  
+        </div>
+      </div>
 
+      <div class="notification-box">
         <div class="notification-message">
           <img
             class="user-img"
@@ -132,41 +144,55 @@
           <div class="message">
             <div>
               <p class="message-paragraph">
-              <span class="user-name">Kimberly Smith</span> commented on your picture
+                <a href="#" class="user-name">Kimberly Smith</a> commented on
+                your picture
               </p>
               <div class="time">1 week ago</div>
             </div>
           </div>
-            <img class="chess-img" src="./assets/images/image-chess.webp" alt="image of chess board"/>
+          <a class="chess-img-link" href="#">
+            <img
+              class="chess-img"
+              src="./assets/images/image-chess.webp"
+              alt="image of chess board"
+            />
+          </a>
         </div>
 
-        <div class="notification-message">
-          <img
-            class="user-img"
-            src="./assets/images/avatar-nathan-peterson.webp"
-            alt="Nathan Peterson's image"
-          />
-          <div class="message">
-            <p class="message-paragraph">
-              <span class="user-name">Nathan Peterson</span>reacted to your recent post
-              <span class="game-5-end">5 end-game strategies to increase your win rate</span>
-            </p>
-            <div class="time">2 weeks ago</div>
+        <div class="notification-box">
+          <div class="notification-message">
+            <img
+              class="user-img"
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson's image"
+            />
+            <div class="message">
+              <p class="message-paragraph">
+                <a href="#" class="user-name">Nathan Peterson</a>reacted to your
+                recent post
+                <a href="#" class="game-5-end"
+                  >5 end-game strategies to increase your win rate</a
+                >
+              </p>
+              <div class="time">2 weeks ago</div>
+            </div>
           </div>
         </div>
 
-        <div class="notification-message">
-          <img
-            class="user-img"
-            src="./assets/images/avatar-anna-kim.webp"
-            alt="Anna Kim's image"
-          />
-          <div class="message">
-            <p class="message-paragraph">
-              <span class="user-name">Anna Kim</span> left the group
-              <span class="club">Chess Club</span>
-            </p>
-            <div class="time">2 weeks ago</div>
+        <div class="notification-box">
+          <div class="notification-message">
+            <img
+              class="user-img"
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="Anna Kim's image"
+            />
+            <div class="message">
+              <p class="message-paragraph">
+                <a href="#" class="user-name">Anna Kim</a> left the group
+                <a href="#" class="club">Chess Club</a>
+              </p>
+              <div class="time">2 weeks ago</div>
+            </div>
           </div>
         </div>
       </div>
@@ -190,27 +216,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
 
-    <script>
-      const markAllRead = document.querySelector('.mark-all-read');
-      const notificationCount = document.querySelector('.notification-count');
-      const notification = document.querySelectorAll('.notification');
-      markAllRead.addEventListener("click", ()=>{
-        notificationCount.textContent="0";
-
-        const notificationMessage = document.querySelectorAll('.notification-message');
-        notificationMessage.forEach(function(e){
-          e.classList.remove('notification-message-unread');
-        })
-
-        const unreadMessageIcon = document.querySelectorAll('.unread-message-icon');
-        const icon =document.getElementsByClassName('unread-message-icon');
-        console.log(icon);
-
-        for(let i =0; i<icon.length; i++){
-          console.log(icon[i]);
-          icon[i].parentNode.removeChild(icon[i]);
-        }
-      })
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -43,14 +43,16 @@ body {
 .unread-message-icon {
   display: inline-block;
   color: #f65351;
-  justify-content: center;
-  align-items: center;
   height: 1.2rem;
   width: 1.2rem;
 }
 
 .notification-message-unread {
   background-color: hsl(210, 60%, 98%);
+}
+
+a {
+  text-decoration: none;
 }
 
 /***********************************************/
@@ -72,6 +74,7 @@ main {
   color: hsl(219, 12%, 42%);
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 3px 30px hsl(211, 68%, 94%);
+  border-radius: 1.6rem;
 
   justify-content: center;
   align-items: center;
@@ -124,10 +127,6 @@ main {
   align-items: center;
 }
 
-.unread {
-  background-color: hsl(211, 68%, 94%);
-}
-
 .notification-message {
   display: flex;
   padding: 0.5rem;
@@ -154,14 +153,14 @@ main {
   margin-right: auto;
 }
 
-.chess-img {
+.chess-img-link {
   margin-left: auto;
   text-align: end;
   height: 6.4rem;
 }
 
-span {
-  margin: 0;
+.chess-img {
+  height: 6.4rem;
 }
 
 .user-img {
@@ -194,11 +193,23 @@ span {
 }
 
 .private-message {
+  color: hsl(219, 12%, 42%) !important;
   padding: 1.6rem;
   margin-right: 2rem;
   border-radius: 0.5rem;
   letter-spacing: 0.8px;
   border: 1px solid hsl(205, 33%, 90%);
+  /* cursor: pointer; */
+}
+
+.private-message a:link,
+.private-message a:visited {
+  color: hsl(219, 12%, 42%);
+}
+
+.private-message a:hover,
+.private-message a:active {
+  color: hsl(219, 12%, 42%);
 }
 
 .attribution {
